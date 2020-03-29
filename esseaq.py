@@ -40,28 +40,7 @@ class InstagramBot:
         driver.get("https://www.instagram.com/p/B-FJ44PBXKl/")
 
   
-        comentarios = [
-                "@samuel.vinicius11","@vitor_puga07","@samuel.vinicius11","@vitor_puga07","@samuel.vinicius11",
-        "@samuel.vinicius11","@vitor_puga07","@samuel.vinicius11","@vitor_puga07","@vitor_puga07",
-                "@samuel.vinicius11","@vitor_puga07","@samuel.vinicius11","@vitor_puga07","@samuel.vinicius11",
-        "@samuel.vinicius11","@vitor_puga07","@samuel.vinicius11","@vitor_puga07","@vitor_puga07",
-                "@samuel.vinicius11","@vitor_puga07","@samuel.vinicius11","@vitor_puga07","@samuel.vinicius11",
-        "@samuel.vinicius11","@vitor_puga07","@samuel.vinicius11","@vitor_puga07","@vitor_puga07",
-                "@samuel.vinicius11","@vitor_puga07","@samuel.vinicius11","@vitor_puga07","@samuel.vinicius11",
-        "@samuel.vinicius11","@vitor_puga07","@samuel.vinicius11","@vitor_puga07","@vitor_puga07",
-                "@samuel.vinicius11","@vitor_puga07","@samuel.vinicius11","@vitor_puga07","@samuel.vinicius11",
-        "@samuel.vinicius11","@vitor_puga07","@samuel.vinicius11","@vitor_puga07","@vitor_puga07",
-                "@samuel.vinicius11","@vitor_puga07","@samuel.vinicius11","@vitor_puga07","@samuel.vinicius11",
-        "@samuel.vinicius11","@vitor_puga07","@samuel.vinicius11","@vitor_puga07","@vitor_puga07",
-                "@samuel.vinicius11","@vitor_puga07","@samuel.vinicius11","@vitor_puga07","@samuel.vinicius11",
-        "@samuel.vinicius11","@vitor_puga07","@samuel.vinicius11","@vitor_puga07","@vitor_puga07",
-                "@samuel.vinicius11","@vitor_puga07","@samuel.vinicius11","@vitor_puga07","@samuel.vinicius11",
-        "@samuel.vinicius11","@vitor_puga07","@samuel.vinicius11","@vitor_puga07","@vitor_puga07",
-                "@samuel.vinicius11","@vitor_puga07","@samuel.vinicius11","@vitor_puga07","@samuel.vinicius11",
-        "@samuel.vinicius11","@vitor_puga07","@samuel.vinicius11","@vitor_puga07","@vitor_puga07",
-                "@samuel.vinicius11","@vitor_puga07","@samuel.vinicius11","@vitor_puga07","@samuel.vinicius11",
-        "@samuel.vinicius11","@vitor_puga07","@samuel.vinicius11","@vitor_puga07","@vitor_puga07",
-        ]
+        comentarios = [#comentarios que voce precisa colocar aqui, com o @ e o nome, se voce colcoar um nome uma vez, vai marcar uma vez, ou seja, coloca varias vezes aq tendeu]
         try:
             for sText in comentarios:    
                 driver.find_element_by_class_name('Ypffh').click()
@@ -73,7 +52,10 @@ class InstagramBot:
                 time.sleep(1)
                 driver.find_element_by_xpath("//button[contains(text(), 'Publicar')]").click()
                 time.sleep(300)
-           
+                #esse time sleep 300 é os segundos que vai demorar pra escrever o proximo comentario, 300 equivale a 5 minutos, assim nao da ban 
+                #porem so comenta 100 mensagens, deu 100 vc espera 3 horas e ja pode voltar
+                #ai nos comentarios vc escreve 100 vezes a mesma pessoa (ou outra sla) dai quando ele marcar todos os 100 ele para de rodar o codigo
+                #conta 3 horas ai no seu relogio a partir do momento q ele parar de marcar, ai vc executa dnv e assim va... qlq duvida da um salve no zap
 
         except Exception as e:
             print(e)
@@ -81,5 +63,5 @@ class InstagramBot:
 
 
 # Entre com o usuário e senha aqui
-jhonatanBot = InstagramBot("g_sssilva", "senhatoskaa07")
+jhonatanBot = InstagramBot("SeuUsuario", "SuaSenha")
 jhonatanBot.login()
