@@ -3,8 +3,6 @@ from selenium.webdriver.common.keys import Keys
 import time
 import random
 
-# Fiz algumas modificações
-
 
 class InstagramBot:
     def __init__(self, username, password):
@@ -41,26 +39,7 @@ class InstagramBot:
 
   
         comentarios = [
-                "@samuel.vinicius11","@vitor_puga07","@samuel.vinicius11","@vitor_puga07","@samuel.vinicius11",
-        "@samuel.vinicius11","@vitor_puga07","@samuel.vinicius11","@vitor_puga07","@vitor_puga07",
-                "@samuel.vinicius11","@vitor_puga07","@samuel.vinicius11","@vitor_puga07","@samuel.vinicius11",
-        "@samuel.vinicius11","@vitor_puga07","@samuel.vinicius11","@vitor_puga07","@vitor_puga07",
-                "@samuel.vinicius11","@vitor_puga07","@samuel.vinicius11","@vitor_puga07","@samuel.vinicius11",
-        "@samuel.vinicius11","@vitor_puga07","@samuel.vinicius11","@vitor_puga07","@vitor_puga07",
-                "@samuel.vinicius11","@vitor_puga07","@samuel.vinicius11","@vitor_puga07","@samuel.vinicius11",
-        "@samuel.vinicius11","@vitor_puga07","@samuel.vinicius11","@vitor_puga07","@vitor_puga07",
-                "@samuel.vinicius11","@vitor_puga07","@samuel.vinicius11","@vitor_puga07","@samuel.vinicius11",
-        "@samuel.vinicius11","@vitor_puga07","@samuel.vinicius11","@vitor_puga07","@vitor_puga07",
-                "@samuel.vinicius11","@vitor_puga07","@samuel.vinicius11","@vitor_puga07","@samuel.vinicius11",
-        "@samuel.vinicius11","@vitor_puga07","@samuel.vinicius11","@vitor_puga07","@vitor_puga07",
-                "@samuel.vinicius11","@vitor_puga07","@samuel.vinicius11","@vitor_puga07","@samuel.vinicius11",
-        "@samuel.vinicius11","@vitor_puga07","@samuel.vinicius11","@vitor_puga07","@vitor_puga07",
-                "@samuel.vinicius11","@vitor_puga07","@samuel.vinicius11","@vitor_puga07","@samuel.vinicius11",
-        "@samuel.vinicius11","@vitor_puga07","@samuel.vinicius11","@vitor_puga07","@vitor_puga07",
-                "@samuel.vinicius11","@vitor_puga07","@samuel.vinicius11","@vitor_puga07","@samuel.vinicius11",
-        "@samuel.vinicius11","@vitor_puga07","@samuel.vinicius11","@vitor_puga07","@vitor_puga07",
-                "@samuel.vinicius11","@vitor_puga07","@samuel.vinicius11","@vitor_puga07","@samuel.vinicius11",
-        "@samuel.vinicius11","@vitor_puga07","@samuel.vinicius11","@vitor_puga07","@vitor_puga07",
+                "Comente aqui para o bot postar"
         ]
         try:
             for sText in comentarios:    
@@ -81,5 +60,5 @@ class InstagramBot:
 
 
 # Entre com o usuário e senha aqui
-jhonatanBot = InstagramBot("usuario", "senha")
+jhonatanBot = InstagramBot("Usuario", "Senha")
 jhonatanBot.login()
