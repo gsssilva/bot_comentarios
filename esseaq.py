@@ -3,8 +3,6 @@ from selenium.webdriver.common.keys import Keys
 import time
 import random
 
-# Fiz algumas modificações
-
 
 class InstagramBot:
     def __init__(self, username, password):
